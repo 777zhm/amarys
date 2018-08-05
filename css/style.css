@@ -7,58 +7,74 @@ body {
     color: rgba(0, 0, 0, 0.9);
 }
 
-h1, h2, h3, h4, h5, h6{
-font-family: Georgia, serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.subheading {
+    font-family: Georgia, serif;
+    font-weight: bold;
 }
 
-h1{
-	font-weight: bold;
-	font-style: italic;
-	font-size: 2.625rem; 	/* 42px */ 
+h1 {
+    font-style: italic;
+    font-size: 2.625rem;
+    /* 42px */
 }
 
-h2{
-	font-weight: bold;
-	font-style: italic;
-	font-size: 2.25rem; 	/* 36px */ 
+h2 {
+    font-style: italic;
+    font-size: 2.25rem;
+    /* 36px */
 }
 
-h3{
-	font-weight: bold;
-	font-size: 1.875rem; 	/* 30px */ 
+h3 {
+    font-size: 1.875rem;
+    /* 30px */
 }
 
-h4{
-	font-weight: bold;
-	font-size: 1.5rem; 		/* 24px */
-	text-transform: uppercase; 
-	padding-top: 1.5rem;
-	padding-bottom: 0.75rem;
+h4 {
+    font-size: 1.5rem;
+    /* 24px */
+    text-transform: uppercase;
 }
 
-a{
-	color: rgba(0, 0, 0, 1);
-	text-decoration: none;
+.subheading {
+    font-size: 1.5rem;
+    /* 24px */
+    background-color: #ededed;
+    font-style: italic;
+    text-indent: 2.5rem;
 }
 
-a:hover{
-	color: rgba(0, 0, 0, 1);
-	text-decoration: none;
+
+a {
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
 }
+
+a:hover {
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
 
 /* Start menu */
+
 #mainmenu {
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
 }
 
-.navbar{
-	padding: 0;
+.navbar {
+    padding: 0;
 }
 
-.logotype{
-	margin: 0 .5rem;
-	background-color: rgba(255, 255, 255, 1);
+.logotype {
+    margin: 0 .5rem;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .navbar .navbar-nav {
@@ -82,20 +98,28 @@ a:hover{
     transform: scale(1.1);
 }
 
-.language_box{
-	margin: 0 .5rem;
-	background-color: rgba(255, 255, 255, 1);
+.language_box {
+    margin: 0 .5rem;
+    background-color: rgba(255, 255, 255, 1);
 }
 
-.language_box a>img{
-	transition: all .3s ease-in;
+.language_box a>img {
+    transition: all .3s ease-in;
 }
 
-.language_box a>img:hover{
-	transform: scale(1.3);
+.language_box a>img:hover {
+    transform: scale(1.3);
 }
+
+.navbar-toggler {
+    margin: .25rem .25rem;
+    padding: 0;
+    border: none;
+}
+
 
 /* END menu */
+
 
 /* Start Anchor destination */
 
@@ -106,173 +130,221 @@ a.destination {
     visibility: hidden;
 }
 
+
 /* END Anchor destination */
+
 
 /* Start main section */
 
-.slider_item{
-	overflow: hidden;
+.slider_item {
+    overflow: hidden;
 }
 
-.main_slider_block{
-  background: rgba(127, 127, 127, 0.35) url(../img/bg1bridge.jpg) no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  height: 340px;
-}
-	
-.main_header_block h1{
-	padding: 116px 0 30px 70px;
+.main_slider_block {
+    background: rgba(127, 127, 127, 0.35) url(../img/bg1bridge.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 340px;
 }
 
-.main_header_block p{
-	font-size: 28px;
-	font-style: italic;
-	font-family: Georgia, serif;
-	padding: 30px 45px 60px 0;
+.main_header_block p {
+    font-size: 1.75rem;
+    font-style: italic;
+    font-family: Georgia, serif;
 }
-
 
 /* END main section */
+
+
+/* Start aboutus section */
+
+.aboutus_img {
+    max-height: 330px;
+}
+
+.aboutus_text,
+.aboutus_list,
+.products_list {
+    font-size: 1.75rem;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.aboutus_list {
+    list-style: none
+}
+
+.aboutus_list li {
+    position: relative;
+    line-height: 1.9rem;
+}
+
+.aboutus_list li::before {
+    position: absolute;
+    top: 0;
+    margin: 0 0 0 -1.25rem;
+    display: inline-block;
+    content: "»";
+    color: blue;
+}
+
+
+
+/* END aboutus section */
+
+
+/* Start products section */
+
+.products_list {
+    list-style: none;
+}
+
+.products_list li {
+    position: relative;
+    line-height: 1.9rem;
+}
+
+.products_list li:before {
+    position: absolute;
+    top: 0;
+    margin: 0 0 0 -1.25rem;
+    display: inline-block;
+    content: "»";
+    color: blue;
+}
+
+
+/* END products section */
+
+
+/* Start divider section */
+
+.divider_block {
+    background: rgba(127, 127, 127, 0.35) url(../img/bg3bigcity.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 450px;
+}
+
+
+
+
+/* END divider section */
+
+
 /* Start contacts section */
 
-
-.contacts_slider_block{
-  background: rgba(127, 127, 127, 0.35) url(../img/bg3bigcity.jpg) no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  height: 450px;
-}
-
-
-
-/* Start отключение изменения размера textarea*/
-textarea.usertext{
-resize: none;
-max-width: 98%;	
-}
-/* End отключение изменения размера textarea*/
-
-
-/* END contacts section */
-
-
-/* Start contact section */
-.contact, footer {
+.contact {
     background: rgba(127, 127, 127, 0.35) url(/img/graygridbg.png) repeat center center;
+    padding-top: 1.5rem;
 }
 
+textarea.usertext {
+    resize: none;
+    max-width: 98%;
+}
 
 .contact_block>p {
-	margin: 0px;
-	padding: 0px;
-	font-size: 1.25rem;
-	font-weight: bold;
-	font-family: Georgia, serif;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: Georgia, serif;
 }
-.contact_block>p:hover{
-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+
+.contact_block>p:hover {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
 }
 
 .contact_block>p::selection {
-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
-background-color: rgba(255,99,71, 1); /* color tomato */
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 99, 71, 1);
+    /* color tomato */
+}
+
+.social_block>a {
+    color: #000000;
+    font-size: 1.25rem;
+}
+
+.social_block>a:hover {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
 }
 
 
-.social_block>a{
-	color: #000000;
-	font-size: 1.25rem;
-}
-
-.social_block>a:hover{
-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
-}
 
 
 /* End contact section */
 
-/*START copyright*/
-.copyright_row{
-	padding-top: 1rem;
+
+/*START footer*/
+
+footer {
+    background: rgba(127, 127, 127, 0.35) url(/img/graygridbg.png) repeat center center;
 }
 
-.copyright_row>p{
-	font-size: 0.875rem;
-	font-family: Georgia, serif;	
-	transition: all .1s ease-in;
+
+.copyright_row {
+    padding-top: 1rem;
 }
-.copyright_row>p:hover{
-	font-size: 0.875rem;
+
+.copyright_row>p {
+    font-size: 0.875rem;
+    font-family: Georgia, serif;
+    transition: all .1s ease-in;
+}
+
+.copyright_row>p:hover {
+    font-size: 0.875rem;
     transform: scale(1.1);
 }
 
-/*END copyright*/
-
-
-.aboutus_text{
-
-	background-color: red;
-}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*END footer*/
 
 
 /* Start TEST */
-.container-fluid, .test{
-	border: 1px dashed black;
-}
+
+
+/*.container-fluid,
+.container,
+.test {
+    border: 1px dashed black;
+}*/
+
 
 /* END TEST */
 
 
-
-
 /* Start fonts  */
-@font-face {
-
-font-family: "Georgia"; 
-
-src: url("/fonts/georgia.ttf") format("truetype"); 
-font-style: normal; 
-font-weight: normal; 
-} 
 
 @font-face {
 
-font-family: "GeorgiaBoldItalic"; 
+    font-family: "Georgia";
 
-src: url("/fonts/georgiaz.ttf") format("truetype"); 
-font-style: italic; 
-font-weight: bold; 
-} 
+    src: url("/fonts/georgia.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+
+    font-family: "GeorgiaBoldItalic";
+
+    src: url("/fonts/georgiaz.ttf") format("truetype");
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+
 
 /* END fonts */
-

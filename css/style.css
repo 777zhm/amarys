@@ -115,7 +115,7 @@ a.destination {
 }
 
 .main_slider_block{
-  background: rgba(127, 127, 127, 0.35) url(../img/bg1bridge.png) no-repeat;
+  background: rgba(127, 127, 127, 0.35) url(../img/bg1bridge.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -140,7 +140,7 @@ a.destination {
 
 
 .contacts_slider_block{
-  background: rgba(127, 127, 127, 0.35) url(../img/bg3bigcity.png) no-repeat;
+  background: rgba(127, 127, 127, 0.35) url(../img/bg3bigcity.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -214,13 +214,42 @@ box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.8);
 /*END copyright*/
 
 
+.aboutus_text{
+
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* Start TEST */
-.container-fluid{
+.container-fluid, .test{
 	border: 1px dashed black;
 }
+
 /* END TEST */
 
 

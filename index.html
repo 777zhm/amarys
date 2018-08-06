@@ -47,7 +47,7 @@
             <a href="ru/index.html"><img src="img/ru_flag.png" alt="RU" height="32"></a>
         </div>
     </nav>
-    <main role="main" class="container-fluid home">
+    <main role="main" class="container-fluid home pb-md-3">
         <a class="destination" id="home"></a>
         <div class="row">
             <div class="col-sm-12 main_header_block">
@@ -59,12 +59,12 @@
             </div>
         </div>
     </main>
-    <section class="container aboutus pt-sm-5">
+    <section class="container aboutus pt-md-5 mt-md-4">
         <a class="destination" id="aboutus"></a>
         <div class="row">
             <div class="col-md-12">
-                <img src="img/bg2laptop.jpg" class="img-fluid float-sm-left mr-md-3 mb-2 aboutus_img" alt="bg2laptop">
-                <h2 class="text-center">About AMARYS</h2>
+                <img src="img/bg2laptop.jpg" class="img-fluid float-sm-left mr-md-3 mb-3 aboutus_img" alt="bg2laptop">
+                <h2 class="header_aboutus">About AMARYS</h2>
                 <p class="aboutus_text">Started in 2018, MB Amarys is a newly established company with primary focus on Industrial needs and delivery programs.</p>
                 <p class="aboutus_text">We assure to provide commitment at all levels of your project.</p>
                 <p class="aboutus_text">We aspire to become a leading international organization by specializing within following services</p>
@@ -81,14 +81,14 @@
         <div class="row">
             <div class="col-sm-12">
                 <h2>You name it, we’ll find it!</h2>
-                <p class="subheading ml-5">We aim to build close ties with our suppliers and customers. Due to this and several other reasons we are competent to supply, provide customer service and shipping at the best price.</p>
+                <p class="subheading">We aim to build close ties with our suppliers and customers. Due to this and several other reasons we are competent to supply, provide customer service and shipping at the best price.</p>
             </div>
-            <div class="col-md-5 text-center">
+            <div class="col-md-5 text-center pt-2 mt-2">
                 <img src="img/collage1.jpg" alt="collage_products" class="img-fluid">
             </div>
             <div class="col-md-6">
                 <h3>Our range of products:</h3>
-                <ul class="products_list">     
+                <ul class="products_list">
                     <li>Power Tools</li>
                     <li>Hand Tools</li>
                     <li>Abrasives</li>
@@ -104,6 +104,8 @@
                     <li>Manual Machine Tools</li>
                     <li>General Industrial Consumables</li>
                 </ul>
+            </div>
+            <div class="col-sm-12">
                 <p class="subheading">One stop shop for all your industrial needs.</p>
             </div>
         </div>
@@ -111,9 +113,10 @@
     <section class="container solutions">
         <a class="destination" id="solutions"></a>
         <div class="row justify-content-center">
-            <div class="col-sm-12 mt-4"><p class="subheading ml-5">We are a team of professionals offering industrial and technical solutions. Every Project is an opportunity for us to raise our standards of service and quality.</p>
+            <div class="col-sm-12 mt-4">
+                <p class="subheading">We are a team of professionals offering industrial and technical solutions. Every Project is an opportunity for us to raise our standards of service and quality.</p>
             </div>
-            <div class="col-sm-12 text-center">
+            <div class="col-sm-12 text-center pt-2 mt-2 pb-2 mb-sm-2">
                 <img src="img/collage2.jpg" alt="collage_solutions" class="img-fluid">
             </div>
         </div>
@@ -121,16 +124,17 @@
     <footer class="container-fluid contact">
         <a class="destination" id="contact"></a>
         <div class="row">
-            <div class="col-sm-12 divider_block">
+            <div class="col-sm-12 d-none d-lg-block divider_block">
                 <!-- background-image -->
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 pt-3">
-                <h4 class="text-center">CONTACT INFO</h4>
+            <div class="col-md-6 pt-5 pl-sm-5">
+                <h4>CONTACT INFO</h4>
                 <div class="contact_block">
                     <p>&nbsp;<i class="fas fa-map-marker-alt">&nbsp; Address: </i> Girulių g. 10, LT-12112 Vilnius</p>
-                    <p><i class="fas fa-phone">&nbsp; Contact No.: </i>&nbsp;<a class="contact_telephone" href="tel:+380-97-346-6553">+380 97 346 65 53</a></p>
+                    <p><i class="fas fa-phone">&nbsp;Phone:</i>&nbsp;<a class="contact_telephone" href="tel:+380-97-346-6553">+380 97 346 65 53</a></p>
+                    <p><i class="fas fa-phone">&nbsp;Phone:</i>&nbsp;<a class="contact_telephone" href="tel:+380-67-464-3606">+380 67 464 36 06</a></p>
                     <p><i class="fas fa-envelope">&nbsp; Email: </i> info@amarys.eu</p>
                     <p>Company Registration No: 304878977</p>
                     <p>Registered in Lithuania</p>
@@ -140,8 +144,12 @@
                     <a href="https://www.linkedin.com/company" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
                 </div>
             </div>
-            <div class="col-md-6 pt-3 text-center">
-                <h4 class="text-center">CONTACT FORM</h4>
+            <div class="col-md-6 pt-5">
+                <div class="row justify-content-center">
+                    <div class="col-sm-10">
+                        <h4>CONTACT FORM</h4>
+                    </div>
+                </div>
                 <form id="formcontact" action="/send_contact.php" method="post" class="needs-validation" novalidate>
                     <div class="row justify-content-center">
                         <div class="col-sm-5">
@@ -163,15 +171,15 @@
                             </div>
                         </div>
                         <div class="col-sm-10">
-                                <textarea class="form-control usertext" name="usertext" id="usertext" rows="4" maxlength="600" placeholder="Your message" required></textarea>
-                                <div class="invalid-feedback">
-                                    Enter your message.
-                                </div>
+                            <textarea class="form-control usertext" name="usertext" id="usertext" rows="4" maxlength="600" placeholder="Your message" required></textarea>
+                            <div class="invalid-feedback">
+                                Enter your message.
+                            </div>
                         </div>
                     </div>
                     <div class="form-row mt-2 justify-content-center">
                         <div class="button_wrapper">
-                        <button type="submit" class="btn btn_send_amarys">Send</button>
+                            <button type="submit" class="btn btn_send_amarys">Send</button>
                         </div>
                     </div>
                 </form>

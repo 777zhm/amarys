@@ -12,27 +12,26 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.subheading {
+h6 {
     font-family: Georgia, serif;
     font-weight: bold;
 }
 
 h1 {
     font-style: italic;
-    font-size: 2.625rem;
-    /* 42px */
+    font-size: 2rem;
+   
 }
 
 h2 {
     font-style: italic;
-    font-size: 2.25rem;
-    /* 36px */
+    font-size: 1.875rem;
+ 
 }
 
 h3 {
-    font-size: 1.875rem;
-    /* 30px */
+    font-size: 1.5rem;
+
 }
 
 h4 {
@@ -44,11 +43,14 @@ h4 {
 .subheading {
     font-size: 1.5rem;
     /* 24px */
-    background-color: rgba(47, 173, 218, 0.2);
+    font-family: Georgia, serif;
     font-style: italic;
     display: inline;
 }
 
+.header_aboutus{
+
+}
 
 a {
     color: rgba(30, 30, 30, 1);
@@ -149,11 +151,11 @@ a.destination {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 340px;
+    height: 390px;
 }
 
 .main_header_block p {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-style: italic;
     font-family: Georgia, serif;
 }
@@ -172,15 +174,13 @@ a.destination {
     font-size: 1.5rem;
     font-family: Georgia, serif;
     font-style: italic;
-    font-weight: bold;
-    text-indent: 1.875rem;
 }
 
 
 .aboutus_list,
 .products_list {
     list-style: none;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-family: Georgia, serif;
     font-style: italic;
     font-weight: bold;
@@ -230,7 +230,7 @@ footer {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 400px;
+    height: 450px;
 }
 
 textarea.usertext {
@@ -241,7 +241,7 @@ textarea.usertext {
 .contact_block>p {
     margin: 0px;
     padding: 0px;
-    font-size: 1.25rem;
+    font-size: 1.1875rem;
     font-weight: bold;
     font-family: Georgia, serif;
 }
@@ -261,7 +261,7 @@ h4::selection {
 
 .social_block>a {
     color: rgba(51, 51, 51, 1);
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 }
 
 .social_block>a:hover {

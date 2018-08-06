@@ -1,18 +1,18 @@
 <?php
-    $adminemail="777zhm@gmail.com";
-    $site="amarys";
+    $adminemail="brijesh@amarys.eu, olha@amarys.eu";
+    $site="amarys.eu";
     $username=$_POST["username"];
     $usercompany=$_POST["usercompany"]; 
     $useremail=$_POST["useremail"]; 
     $usertext=$_POST["usertext"]; 
     $msg=" 
-    Клиент $usernameblabla воспользовался формой обратной связи на сайте $site
-    ФИО: $username
-    Компания: $usercompany
+    Client $username used the feedback form on the site $site
+    Client name: $username
+    Company name: $usercompany
     E-mail: $useremail 
-    Сообщение: $usertext
+    Message: $usertext
 "; 
-mail("$adminemail", "Клиент $username воспользовался контактной формой на сайте $site", "$msg");
-header('Location: http://amarys.com.ua/de/index.html');
+mail("$adminemail", "Client $username used the feedback form on the site $site", "$msg");
+header('Location: http://amarys.eu/de/index.html');
 exit; 
  ?>

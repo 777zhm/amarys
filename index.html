@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Zhmurko Yuriy">
+    <meta name="description" content="MB AMARYS - Tech.Consultancy, Project procurement, Logistics and Shipping services">
+    <meta name="keywords" content="MB AMARYS,Technical Consultancy, Engineering, Project procurement, Logistics, Shipping services, Power Tools, Hand Tools, Abrasives, Welding Consumables, Safety Equipments, Measurement Tools, Industrial Storage, Band Saw Blades">
+    <meta name="author" content="MB AMARYS">
     <link rel="icon" href="favicon.ico">
     <title>Amarys</title>
     <!-- Bootstrap core CSS -->
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!--font-awesome free CDN-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -67,7 +69,7 @@
                 <h2 class="header_aboutus">About AMARYS</h2>
                 <p class="aboutus_text">Started in 2018, MB Amarys is a newly established company with primary focus on Industrial needs and delivery programs.</p>
                 <p class="aboutus_text">We assure to provide commitment at all levels of your project.</p>
-                <p class="aboutus_text">We aspire to become a leading international organization by specializing within following services</p>
+                <p class="aboutus_text">We aspire to become a leading international organization by specializing within following services:</p>
                 <ul class="aboutus_list">
                     <li>Technical Consultancy and Engineering services for our business partners. </li>
                     <li>Project procurement and management services. </li>
@@ -152,13 +154,13 @@
                 </div>
                 <form id="formcontact" action="/send_contact.php" method="post" class="needs-validation" novalidate>
                     <div class="row justify-content-center">
-                        <div class="col-sm-5">
+                        <div class="col-sm-5 mt-1">
                             <input type="text" class="form-control" id="username" name="username" placeholder="Name" required>
                             <div class="invalid-feedback">
                                 Enter your name.
                             </div>
                         </div>
-                        <div class="col-sm-5 mb-1">
+                        <div class="col-sm-5 mb-1 mt-1">
                             <input type="email" class="form-control" id="useremail" name="useremail" placeholder="Email" required>
                             <div class="invalid-feedback">
                                 Please, enter a valid e-mail.
@@ -178,6 +180,9 @@
                         </div>
                     </div>
                     <div class="form-row mt-2 justify-content-center">
+                        <div class="g-recaptcha" data-sitekey="6LdigGgUAAAAAJUzoOonLmt71gDjovoiak5EBbBU"></div>
+                    </div>
+                    <div class="form-row mt-2 justify-content-center">
                         <div class="button_wrapper">
                             <button type="submit" class="btn btn_send_amarys">Send</button>
                         </div>
@@ -189,6 +194,26 @@
             <p><a href="https://z1.com.ua" target="_blank">Developed by Z1.com.ua, 2018</a></p>
         </div>
     </footer>
+    <script>
+    // JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

@@ -221,7 +221,7 @@ a.destination {
 /*START footer*/
 
 footer {
-    background: rgba(47, 173, 218, 0.15) url(/img/graygridbg.png) repeat center center;
+    background: rgba(47, 173, 218, 0.15) url(../img/graygridbg.png) repeat center center;
 }
 
 .divider_block {
